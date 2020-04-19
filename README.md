@@ -1,6 +1,6 @@
 <h1 align="center">
 <br>
-  <img src="./frontend/src/assets/logo.jpg" alt="DevRadar" width="120">
+  <img src="./frontend/src/assets/logo.jpg" alt="DevRadar" width="300">
 <br>
 <br>
 DevRadar
