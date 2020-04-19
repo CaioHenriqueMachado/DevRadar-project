@@ -12,11 +12,11 @@ html, body, #root{
 }
 
 body {
-    background: #E5E6F0;
+    background: #6931ca;
     -webkit-font-smoothing:antialiased;
 }
 
 body, input, button {
-    font-family: Roboto, sans-serif;
+    font: 400 18px Roboto, sans-serif;
 }
 

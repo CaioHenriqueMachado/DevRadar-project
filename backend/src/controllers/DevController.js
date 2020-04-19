@@ -4,6 +4,8 @@ const Dev = require('../models/Dev');
 
 const parseStringAsArray = require('../utils/parseStringAsArrays');
 
+const {findConnections, sendMessage } = require('../websocket');
+
 module.exports = {
 async index(request, response) {
     const devs = await Dev.find();
@@ -36,6 +38,14 @@ async store(request, response) {
             techs: techsArray,
             location,
         })
+
+        // Filtrar devs a 10km com pelo menos uma das techs.
+        const sendSocketMessageTo = findConnections(
+            { latitude, longitude },
+            techsArray,
+        )
+
+        sendMessage(sendSocketMessageTo, 'new-dev', dev);
     }
 
     return response.json(dev);

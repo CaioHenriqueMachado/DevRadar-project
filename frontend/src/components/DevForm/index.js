@@ -41,10 +41,11 @@ function DevForm({ onSubmit }){
     return (
         <form onSubmit={handleSubmit}>
             <div className="input-block">
-            <label htmlFor="github_username">Usuário do Github</label>
-            <input 
+            <label htmlFor="github_username"></label>
+            <input
             name="github_username" 
             id="github_username" 
+            placeholder="Seu usuário no Github."
             required
             value={github_username}
             onChange={e=> setGithub_username(e.target.value)}
@@ -52,10 +53,11 @@ function DevForm({ onSubmit }){
             </div>
 
             <div className="input-block">
-            <label htmlFor="techs">Tecnologias</label>
+            <label htmlFor="techs"></label>
             <input 
             name="techs" 
-            id="techs" 
+            id="techs"
+            placeholder="Suas tecnologias usadas."
             required 
             value={techs}
             onChange={e=> setTechs(e.target.value)}
@@ -87,7 +89,7 @@ function DevForm({ onSubmit }){
                 />
             </div>
             </div>
-            <button type="submit">Salvar</button>
+            <button type="submit">Cadastre-se</button>
         </form>
     );
 }

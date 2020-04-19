@@ -4,9 +4,17 @@ const mongoose = require('mongoose');
 
 const cors = require('cors');
 
+const http = require('http')
+
 const routes = require('./routes');
 
+const { setupWebsocket } = require('./websocket');
+
 const app = express();
+
+const server = http.Server(app);
+
+setupWebsocket(server);
 
 mongoose.connect('mongodb+srv://caio:09121997caio1133@cluster0-5cpv2.mongodb.net/week10?retryWrites=true&w=majority', {
     useNewUrlParser: true,
@@ -21,4 +29,4 @@ app.use(routes);
 
 
 
-app.listen(3333);
+server.listen(3333);
