@@ -6,7 +6,7 @@
 DevRadar
 </h1>
 
-<p align="center">Mobile and web application of monetary donation for NGOs, built in one week Omnistack</p>
+<p align="center">A radar to find developers with the skills you're looking for, built in one week Omnistack</p>
 
 <p align="center">
   <a href="https://opensource.org/licenses/MIT">
@@ -28,14 +28,14 @@ This app features all the latest tools and practices in mobile development!
 - ⚛️ **React Js** 	- A JavaScript library for building user interfaces
 - ⚛️ **React Native** 	- A lib that provides a way to create native apps for Android and iOS
 - 💹 **Node Js** 	- A web framework for Node Js
-- 📄 **SQlite** 		- A cross-platform and open-source Structured Query Language.
+- 📄 **MongoBD** 	- A open-source document-oriented database.
 - ☯️ **Insomnia** 	- HTTP request software and with open source.
-- 🔄 **Nodemon** 	- Reload server automatically.
+- ♻️ **Socket IO** 	- Reload server automatically.
 
 ## Getting started
 
-1. Clone this repo using `git clone https://github.com/CaioHenriqueMachado/BE-THE-HERO-project.git`
-2. Move yourself to the appropriate directory: `cd BeTheHero`<br />
+1. Clone this repo using `git clone https://github.com/CaioHenriqueMachado/DevRadar-project.git`
+2. Move yourself to the appropriate directory: `cd DevRadar`<br />
 3. Run `yarn` to install dependencies<br />
 3. Run `npm` to install dependencies<br />
 
@@ -43,7 +43,7 @@ This app features all the latest tools and practices in mobile development!
 ### Getting started with the backend server
 
 1. Move yourself to the backend folder: `cd backend`
-2. Run `npm start` to start the server
+2. Run `yarn dev` to start the server
 
 ### Getting started with the frontend app
 
