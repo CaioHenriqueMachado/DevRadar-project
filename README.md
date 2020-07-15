@@ -16,7 +16,7 @@ DevRadar
 
 <h1 align="center">Web Version</h1>
 <div>
-  <img src="./frontend/src/assets/demo_web.gif" alt="demo-web" height="450" width="70%">
+  <img src="./frontend/src/assets/demo_web.gif" alt="demo-web" height="450" width="100%">
 </div>
 <h1 align="center">Mobile Version</h1>
 <div align="center">
